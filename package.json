@@ -1,12 +1,34 @@
 {
   "name": "installed-dependencies",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Fetch installed dependencies",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "bin": {
+    "installed-dependencies": "./bin/installed-dependencies.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "scripts": {
+    "prepublishOnly": "npm-audit-ok && package-ok"
+  },
+  "keywords": [
+    "npm",
+    "npm installed dependencies",
+    "installed-dependencies",
+    "installed dependencies in node"
+  ],
+  "author": "Dhruv Jain <dhruvjainpenny@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "npm": "^6.13.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maddhruv/installed-dependencies.git"
+  },
+  "bugs": {
+    "url": "https://github.com/maddhruv/installed-dependencies/issues"
+  },
+  "homepage": "https://github.com/maddhruv/installed-dependencies#readme",
+  "devDependencies": {
+    "prepublish-ok": "^0.5.0"
+  }
 }
